@@ -33,7 +33,7 @@ jobs:
       - name: npm install and npm run build
         run: |
           npm i
-          npm run build --prod
+          npm run build4prod
       - name: SCP Files
         uses: appleboy/scp-action@master
         with:
