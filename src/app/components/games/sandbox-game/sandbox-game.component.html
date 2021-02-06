@@ -1,0 +1,3 @@
+<button *ngIf="!gameActive" id="new-game-button" (click)="startNewGame()">New Game</button>
+
+<canvas *ngIf="gameActive" id="canvas" width="500" height="500"></canvas>

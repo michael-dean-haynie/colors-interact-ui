@@ -5,14 +5,14 @@ import { tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
 interface HelloWorldDTO {
-  hello: String
+  hello: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class DevelopmentApiService {
-  private baseUrl = `${environment.apiBaseUrl}/development`;
+  private baseUrl = `${environment.apiRestEndpointsProtocol}${environment.apiBaseUrl}/development`;
 
   constructor(
     private http: HttpClient

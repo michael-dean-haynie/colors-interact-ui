@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:7083'
+  apiBaseUrl: 'localhost:7083',
+  apiRestEndpointsProtocol: 'http://',
+  apiWebSocketProtocol: 'ws://'
 };
 
 /*

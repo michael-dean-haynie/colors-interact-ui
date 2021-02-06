@@ -20,6 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "sockjs-client"
+            ],
             "outputPath": "dist/colors-interact-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
